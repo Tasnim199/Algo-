@@ -1,0 +1,50 @@
+ALGORITHM first task  
+VAR
+str : STRING[10];
+i,j,k:INTEGER;
+voyel:CHAR:='a','i','u','o','y','e';
+nbr_of_words:INTEGER
+BEGIN
+write("write a sentence which ends with a point ");
+read(str);
+voyel=0;
+FOR i FROM 0 TO str.lenght-1 STEP 1 DO
+IF (i=voyel) THEN
+voyel=voyel+1;
+END_IF
+read("the number of voyels is",voyel);
+END_FOR 
+nbr_of_words=1;
+FOR j FROM 0 TO str.lenght-1 STEP 1 DO
+    IF (j=" ") THEN
+    nbr_of_words=nbr_of_words+1
+    END_IF
+END_FOR
+END
+
+
+
+
+
+
+ALGORITHM second task 
+VAR
+tab1 : ARRAY_OF INTEGER[4];
+tab2 : ARRAY_OF INTEGER[5];
+tab3 : ARRAY_OF INTEGER [5];
+sum:INTEGER; 
+i,j,k:INTEGER;
+BEGIN
+sum=0,
+FOR i FROM 0 TO tab1.lenght-1 STEP 1  DO
+FOR j FROM 0 TO tab2.lenght-1 STEP 1  DO
+IF ( tab1[i]<>tab2[j]) THEN
+    tab1[i]=tab3[k];
+    tab2[j]=tab3[k];
+    END_IF
+    FOR k FROM 0 TO tab3.lenght-1 STEP 1  DO
+    sum=sum+tab3[k];
+    END_FOR  
+END_FOR
+END_FOR
+END
